@@ -28,14 +28,22 @@ Nessa parte do código passamos uma variável que armazenaria a tabela dentro de
 A seguir criamos uma condição "IF" para a validação onde se o nome ou o cpf estiver vazio ele entra na condição e imprime para o usuário através do "Window.alert" que está vazio, se o nome e o cpf não estiverem vazios ele entra no "Else" que vai armazenar dentro da tabela os mesmos respectivamente.
     
     
-                      if (nome.trim() == "" || cpf == "") {
-    window.alert("Insira um valor possivel!");
-    } else {
-      var tabela = {
-          "id": arrayTabela.length,
-          "nome": nome,
-          "cpf": cpf
-       }
+                    
+```	    
+
+if (nome.trim() == "" || cpf == "")
+{
+	window.alert("Insira um valor possivel!");
+} 
+else
+{
+	var tabela = {
+	"id": arrayTabela.length,
+	"nome": nome,
+	"cpf": cpf
+}
+
+```
       
 
 No decorrer do código, criamos uma variável chamada “javalidou” essa variável é responsável por limpar a caixa de texto inserida no HTML onde o usuário escreve o nome e o cpf para a tabela. Neste caso inicializamos a variável com o valor “False” para que a mesma não limpe os campos sem antes a validação de nome e cpf estejam corretas.	
