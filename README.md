@@ -11,13 +11,13 @@ NOME: <input type="text" id="txtNome" name="txtNome" />
 <input type="button" id="buttonAdicionar" value="Adicionar" onclick="AdicionarLinha()" />
 
 
-  <table id="tabelaClientes" name="tabelaClientes" border="1">
-  <tr>
-	<td><strong>CPF</strong></td>
-	<td><strong>NOME</strong></td>
-	<td><strong>REMOVER</strong></td>
-	</tr>
-  </table> 
+<table id="tabelaClientes" name="tabelaClientes" border="1">
+<tr>
+<td><strong>CPF</strong></td>
+<td><strong>NOME</strong></td>
+<td><strong>REMOVER</strong></td>
+</tr>
+</table> 
   
   ```
   
@@ -44,10 +44,11 @@ if (nome.trim() == "" || cpf == "")
 } 
 else
 {
-	var tabela = {
-	"id": arrayTabela.length,
-	"nome": nome,
-	"cpf": cpf
+var tabela = 
+{
+"id": arrayTabela.length,
+"nome": nome,
+"cpf": cpf
 }
 
 ```
